@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        navbar {
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+        }
+        navbar a {
+            margin-left: 10px;
+            color: none;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+        }
+        #search-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #logo {
+            margin-bottom: 20px;
+        }
+        #search-form {
+            display: flex;
+            flex-direction: none;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .submit{
+            margin-top: 30px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 600px;
+            height: 25px;
+            border: 1px;
+            border-radius: 32px;
+            padding: 10px 40px 10px 10px;
+            font-size: 16px;
+            border-color: #000000;
+            background-repeat: no-repeat;
+            background-position: 570px;
+        }
+        </style>
+    
+    </head>
+    <body>
+        
+        <navbar>
+            <a href="index.html">Search</a>
+        </navbar>
+
+        <div id="search-container">
+            <img src="pics/image.png" alt="Google images"><br>
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" autofocus placeholder="search images" style="border-color: #000000;">
+                <input type="hidden" name="tbm" value="isch">
+            </form>
+        </div>
+    </body>
+</html>

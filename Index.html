@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+
+        <style>
+           
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        navbar {
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+        }
+        navbar a {
+            margin-left: 10px;
+            color: none;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+        }
+        #search-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #logo {
+            margin-bottom: 20px;
+        }
+        #search-form {
+            display: flex;
+            flex-direction: none;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .submit{
+            margin-top: 30px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 600px;
+            height: 25px;
+            border: 1px;
+            border-radius: 32px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #f1f8f8;
+            color: #000000;
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #f1f8f8;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <navbar>
+            <a href="img_search.html">Images</a>
+            <a href="adv_search.html">Advance</a>
+        </navbar>
+        <div id="search-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"><br>
+            <form action="https://google.com/search">
+                <input type="text" name="q" autofocus placeholder="search" style="border-color: #000000;">
+                <div class="submit">
+                    <input type="submit" value="Google Search">
+                        <form action="" method="GET" style="border-radius: none;">
+                          <input type="hidden" name="q" value="">
+                          <input type="submit" value="I'm Feeling Lucky" onclick="this.form.action='https://www.google.com/search?btnI'; return true;">
+                        </form>
+                </div>
+                <p style="text-align: center; font-size: small;">Google offered in: اردو پښتو سنڌي</p>
+                
+            </form>
+        </div>
+    </body>
+
+</html>

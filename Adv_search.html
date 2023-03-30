@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            body {
+                background-color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+            nav {
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 10px;
+            }
+            nav a {
+                margin-left: 10px;
+                color: none;
+                text-decoration: none;
+                font-size: 14px;
+                color: black;
+            }
+            
+            .heading{
+                color: rgb(227, 71, 71);
+                padding-left: 5%;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .logo {
+                display: block;
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                max-width: 272px;
+                height: 92px;
+            }
+            label {
+                font-size: 16px;
+                display: inline-block;
+                width: 260px;
+                text-align: left;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+            input[type="text"] {
+                width: 500px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                padding: 5px;
+            }
+            input[type="submit"] {
+                background-color: #357ae8;
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                padding: 10px 20px;
+                font-size: 12px;
+                text-decoration: bold;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+            input[type="submit"]:hover {
+                background-color: #185ed9;
+            }
+            hr {
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="pics/google.png" alt="Google images" style="width: 5%;">
+            <a href="index.html" style="margin-left: auto;">Search</a>
+        </nav>
+
+        <header class="heading">
+            <h3>Advance search</h3>
+        </header>
+        <hr>
+
+        <div class="container">
+            <form action="https://www.google.com/search" method="GET">
+                <label for="all-words">with all these words:</label>
+                <br>
+                <input type="text" id="all-words" name="as_q"><br>
+                <label for="exact-phrase">with this exact word or phrase:</label>
+                <br>
+                <input type="text" id="exact-phrase" name="as_epq"><br>
+                <label for="any-words">with any of these words:</label>
+                <br>
+                <input type="text" id="any-words" name="as_oq"><br>
+                <label for="none-words">with none of these words:</label>
+                <br>
+                <input type="text" id="none-words" name="as_eq"><br>
+                <input type="submit" value="Advanced Search">
+                <hr>
+            </form>
+        </div>
+    </body>
+</html>
